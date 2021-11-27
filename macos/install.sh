@@ -18,9 +18,6 @@ binaries=(
 
 brew install ${binaries[@]}
 
-# Install Rectangle
-brew install --cask rectangle
-
 # Cleanup brew installs
 brew cleanup
 
