@@ -3,7 +3,7 @@
 echo "Setting up your Mac..."
 
 # Load env variables before we continue
-source $HOME/.dotfiles_env
+source $DOTFILES/.dotfiles_env
 
 # Install dotfiles on a fresh system
 source $DOTFILES/bin/install.sh
