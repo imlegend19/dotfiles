@@ -2,8 +2,8 @@
 
 echo "Setting up your Mac..."
 
-# Load env variables before we continue
-source $DOTFILES/.dotfiles_env
+# Pat to your dotfiles
+DOTFILES="$HOME/dotfiles"
 
 # Install dotfiles on a fresh system
 source $DOTFILES/bin/install.sh

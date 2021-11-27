@@ -7,13 +7,13 @@ brew install bash
 
 # Install Binaries
 binaries=(
-  trash
-  wget
-  git
-  nvm
-  git-delta
-  jesseduffield/lazygit/lazygit
-  lazygit
+    trash
+    wget
+    git
+    nvm
+    git-delta
+    jesseduffield/lazygit/lazygit
+    lazygit
 )
 
 brew install ${binaries[@]}
