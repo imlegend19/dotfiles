@@ -22,4 +22,4 @@ brew install ${binaries[@]}
 brew cleanup
 
 # Set preferences
-source $DOTFILES/osx/preferences.sh
+source $DOTFILES/macos/preferences.sh
