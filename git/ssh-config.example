@@ -1,0 +1,17 @@
+# Personal account (Default - imlegend19)
+Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa
+   
+# Org account (Github)
+Host github.com-org
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_org
+
+# Org account (Bitbucket)
+Host bitbucket.org
+    HostName bitbucket.org
+    User git
+    IdentityFile ~/.ssh/id_rsa_org_bitbucket
