@@ -62,7 +62,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+chflags nohidden ~/Library
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -260,6 +260,6 @@ sudo pmset -a hibernatemode 0
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Mail" "Messages" "Photos" "Safari" "SystemUIServer" \
-    "Terminal" "Tweetbot" "iCal"; do
+    "Terminal" "iCal"; do
     killall "${app}" &> /dev/null
 done
