@@ -156,11 +156,6 @@ unsetopt nomatch
 # Colorls (Warning: this makes loading time slow)
 # alias ls='colorls -A --sd'
 
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 timezsh() {
     shell=${1-$SHELL}
     for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
@@ -169,7 +164,7 @@ timezsh() {
 # Created by `pipx` on 2021-11-27 18:08:07
 export PATH="$PATH:/Users/mahen.mg/.local/bin"
 
-# Required to solve nvm: command not found
+# Required to solve `nvm: command not found`
 source $(brew --prefix nvm)/nvm.sh
 
 # Setup current Git user
