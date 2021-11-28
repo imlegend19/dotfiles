@@ -2,6 +2,7 @@
 
 # Install pyenv
 brew install pyenv
+brew install pyenv-virtualenv
 
 # Install python 3
 pyenv install 3
