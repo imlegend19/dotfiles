@@ -14,6 +14,7 @@ binaries=(
     git-delta
     jesseduffield/lazygit/lazygit
     lazygit
+    openssl
 )
 
 brew install ${binaries[@]}
