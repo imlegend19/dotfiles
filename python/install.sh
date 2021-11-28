@@ -4,6 +4,9 @@
 brew install pyenv
 brew install pyenv-virtualenv
 
+# Use zlib from brew (Refer: https://stackoverflow.com/a/54955286)
+brew install zlib
+
 # Install python 3
 pyenv install 3
 
