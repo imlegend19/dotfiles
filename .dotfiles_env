@@ -1,3 +1,14 @@
+#!/bin/sh
+
 # Paths
 export ZSH="$HOME/.oh-my-zsh"
 export LIBRARY="$HOME/Library"
+
+ENV_FILE="$DOTFILES/.env"
+if [[ -f "$ENV_FILE" ]]; then
+    set -o allexport
+    source $ENV_FILE
+    set +o allexport
+else 
+    export CURRENT_GIT_USER="id_rsa"
+fi

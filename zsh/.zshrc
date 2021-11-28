@@ -170,3 +170,11 @@ export PATH="$PATH:/Users/mahen.mg/.local/bin"
 
 # Required to solve nvm: command not found
 source $(brew --prefix nvm)/nvm.sh
+
+# Setup current Git user
+if [[ -n "$CURRENT_GIT_USER" ]]; then
+    ssh-add -l &>/dev/null
+    if [ "$?" == 1 ]; then
+        ssh-add "$HOME/.ssh/$CURRENT_GIT_USER" -q
+    fi
+fi

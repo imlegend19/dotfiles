@@ -66,3 +66,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Open iOS Simulator
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+
+# Change default python 
+alias python='python3'
