@@ -167,3 +167,6 @@ timezsh() {
 
 # Created by `pipx` on 2021-11-27 18:08:07
 export PATH="$PATH:/Users/mahen.mg/.local/bin"
+
+# Required to solve nvm: command not found
+source $(brew --prefix nvm)/nvm.sh
