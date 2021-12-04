@@ -16,6 +16,7 @@ binaries=(
     lazygit
     openssl
     ffmpeg
+    dive
 )
 
 brew install ${binaries[@]}
