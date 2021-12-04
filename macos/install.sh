@@ -15,6 +15,7 @@ binaries=(
     jesseduffield/lazygit/lazygit
     lazygit
     openssl
+    ffmpeg
 )
 
 brew install ${binaries[@]}
