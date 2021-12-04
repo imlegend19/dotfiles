@@ -11,6 +11,7 @@ apps=(
     whatsapp
     postman
     zoomus
+    docker
 )
 
 # Install apps to /Applications
