@@ -12,8 +12,9 @@ apps=(
     postman
     zoomus
     docker
+    ngrok
 )
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}

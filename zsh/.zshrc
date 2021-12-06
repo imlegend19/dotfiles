@@ -174,3 +174,8 @@ if [[ -n "$CURRENT_GIT_USER" ]]; then
         ssh-add "$HOME/.ssh/$CURRENT_GIT_USER" -q
     fi
 fi
+
+export JAVA_HOME=$(/usr/libexec/java_home -v11)
+
+export GEOSERVER_HOME=/usr/local/geoserver
+
