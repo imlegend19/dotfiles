@@ -5,7 +5,7 @@ echo "Setting up zsh..."
 # Install zsh & helpers
 helpers=(
     zsh
-    zsh-syntax-highlighting 
+    zsh-syntax-highlighting
     zsh-autosuggestions
     zsh-history-substring-search
 )

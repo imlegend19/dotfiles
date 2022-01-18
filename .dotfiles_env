@@ -9,6 +9,6 @@ if [[ -f "$ENV_FILE" ]]; then
     set -o allexport
     source $ENV_FILE
     set +o allexport
-else 
+else
     export CURRENT_GIT_USER="id_rsa"
 fi
