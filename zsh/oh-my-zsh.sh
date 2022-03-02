@@ -6,5 +6,9 @@ echo "Setting up Oh-My-Zsh..."
 rm $HOME/.zshrc
 ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 
+if test -f "$DOTFILES/zsh/.private.zshrc"; then
+    ln -s $DOTFILES/zsh/.private.zshrc $HOME/.zshrc
+fi
+
 # Reload the environment
 env zsh

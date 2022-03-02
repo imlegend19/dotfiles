@@ -177,4 +177,10 @@ fi
 
 export JAVA_HOME=$(/usr/libexec/java_home -v11)
 
-export GEOSERVER_HOME=/usr/local/geoserver
+export GOROOT="/usr/local/go"
+export GOPATH="/Users/mahen.mg/go"
+export PATH=$PATH:$GOPATH
+
+export DYNAMODBROOT=$HOME/dynamodb_local
+
+alias dynamodb='java -Djava.library.path=./$DYNAMODBROOT/DynamoDBLocal_lib -jar $DYNAMODBROOT/DynamoDBLocal.jar -sharedDb &>/dev/null &'

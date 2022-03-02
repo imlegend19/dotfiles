@@ -73,3 +73,6 @@ alias python='python3'
 # Github ssh profile helpers
 alias personal="ssh-add -D 2>/dev/null && ssh-add ~/.ssh/id_rsa 2>/dev/null"
 alias work="ssh-add -D 2>/dev/null && ssh-add ~/.ssh/id_rsa_swiggy 2>/dev/null"
+
+# Get all processes running on <port>
+alias tcpproc="lsof -iTCP -sTCP:LISTEN -n -P"
